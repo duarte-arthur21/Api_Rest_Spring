@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-BR" >
+<html lang="pt-BR" xmlns="https://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,11 +22,9 @@
     <!--DatePicker-->
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
 	
 </head>
 <body>
@@ -78,6 +76,7 @@
                   </div>
 
                   <div id="coluna">
+                    <h1 th:text="${horario}"></h1>
                   <select class="btn btn-secondary btn-lg dropdown-toggle" type="button"
                          data-bs-toggle="dropdown" rows="10">
                            <option class="dropdown-menu" aria-labelledby="dropdownMenuButton1">Selecione um Horario</option>

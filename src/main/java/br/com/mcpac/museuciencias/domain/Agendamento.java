@@ -61,7 +61,7 @@ public class Agendamento {
 		return visitante;
 	}
 
-	public void setVisitante(Visitante horario) {
+	public void setVisitante(Visitante visitante) {
 		this.visitante = visitante;
 	}
 	

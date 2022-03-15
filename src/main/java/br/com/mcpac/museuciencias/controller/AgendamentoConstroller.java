@@ -3,6 +3,8 @@ package br.com.mcpac.museuciencias.controller;
 import java.util.List;
 import java.util.Optional;
 
+import javax.servlet.http.HttpServletRequest;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,7 +23,13 @@ import br.com.mcpac.museuciencias.repository.AgendamentoRepository;
 public class AgendamentoConstroller {
 	@Autowired //Injeta a instancia na classe
 	private AgendamentoRepository agendamentoRepository;
-
+	
+	@GetMapping("/hello")
+	public String hello(HttpServletRequest request) {
+		request.setAttribute("horario", request);
+		return "hello";
+	}
+	
 	
 	@GetMapping
 	public List<Agendamento> listar(){
@@ -55,12 +63,5 @@ public class AgendamentoConstroller {
 		return agendaEditada;
 	}
 	
-	/**@RequestMapping(value = "/posts", method = RequestMethod.GET)
-	public ModelAndView getPosts() {
-		ModelAndView mv = new ModelAndView(viewName: "posts");
-		List<Agendamento> posts = agendamentoRepository.findAll();
-		mv.addObject(atributteName: "posts", posts);
-		return mv;
-		**/
 
 }
