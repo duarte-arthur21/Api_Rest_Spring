@@ -54,5 +54,13 @@ public class AgendamentoConstroller {
 		Agendamento agendaEditada = agendamentoRepository.save(agenda);//Save recebe o valor do objeto e altera seu valor atual
 		return agendaEditada;
 	}
+	
+	/**@RequestMapping(value = "/posts", method = RequestMethod.GET)
+	public ModelAndView getPosts() {
+		ModelAndView mv = new ModelAndView(viewName: "posts");
+		List<Agendamento> posts = agendamentoRepository.findAll();
+		mv.addObject(atributteName: "posts", posts);
+		return mv;
+		**/
 
 }
