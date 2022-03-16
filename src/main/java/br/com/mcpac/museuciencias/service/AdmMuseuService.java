@@ -6,7 +6,6 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.com.mcpac.museuciencias.domain.AdmMuseu;
-import br.com.mcpac.museuciencias.exception.RecursoNaoEncontradoException;
 import br.com.mcpac.museuciencias.repository.AdmMuseuRepository;
 
 @Service
@@ -14,15 +13,15 @@ public class AdmMuseuService {
 	@Autowired
 	private AdmMuseuRepository admMuseuRepository;
 	
-	public AdmMuseu buscarCodigo(Integer telefone) {
-		Optional<AdmMuseu> resultado = admMuseuRepository.findById(telefone);
-		
-		if (resultado.isEmpty()) {
-			throw new RecursoNaoEncontradoException();
-		}
-		AdmMuseu monitor = resultado.get();
-		return monitor;		
-	}
+//	public AdmMuseu buscarCodigo(Integer telefone) {
+//		Optional<AdmMuseu> resultado = admMuseuRepository.findById(telefone);
+//		
+//		if (resultado.isEmpty()) {
+//			throw new RecursoNaoEncontradoException();
+//		}
+//		AdmMuseu monitor = resultado.get();
+//		return monitor;		
+//	}
 	
 	
 	public List<AdmMuseu> listar(){

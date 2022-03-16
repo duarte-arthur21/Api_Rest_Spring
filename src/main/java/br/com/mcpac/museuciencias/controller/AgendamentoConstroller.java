@@ -6,7 +6,6 @@ import java.util.Optional;
 import javax.servlet.http.HttpServletRequest;
 
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -21,23 +20,22 @@ import br.com.mcpac.museuciencias.domain.Agendamento;
 import br.com.mcpac.museuciencias.repository.AgendamentoRepository;
 
 @RestController //Controlador que usa rest
-@Controller
 @RequestMapping("agendamento")
 public class AgendamentoConstroller {
 	
 	@Autowired //Injeta a instancia na classe
 	private AgendamentoRepository agendamentoRepository;
 	
-	@GetMapping("/hello")
-	public String hello(HttpServletRequest request) {
-		request.setAttribute("horario", request);
-		return "agendamento";
-	}
+	@GetMapping("/hello-servlet")
+    public String hello(HttpServletRequest request) {
+        request.setAttribute("nome", "Samuka");
+        return "menu";  // o Spring vai renderizar o arquivo templates/menu.html
+    }
 	
 	@GetMapping("/home")
 	public String home(ModelMap  model) {
 		model.addAttribute("nomeDoAtributo", "Treinaweb");
-		return "home";
+		return "menu.html";
 	}
 	
 	@GetMapping
