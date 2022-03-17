@@ -5637,7 +5637,7 @@ button.bg-danger:focus {
   background-color: #bd2130 !important; }
 
 .bg-light {
-  background-image: url("images/Plano_de_fundo/space.jpg") !important;;
+  background-image: url("../../images/space.jpg") !important;;
   background-color: #f8f9fa}
 
 a.bg-light:hover, a.bg-light:focus,
@@ -8383,7 +8383,7 @@ a.text-dark:hover, a.text-dark:focus {
     size: a3; }
   body {
     min-width: 992px !important; 
-    background-image: url("images/Plano_de_fundo/space.jpg") !important;;
+    background-image: url("../../images/space.jpg") !important;;
 
   }
   .container {
@@ -8417,7 +8417,7 @@ body {
   line-height: 1.8;
   font-weight: normal;
   background: #fafafa;
-  background-image: url("images/Plano_de_fundo/space.jpg") !important;
+  background-image: url("../../images/space.jpg") !important;
   color: gray; }
 
 a {
@@ -8654,10 +8654,10 @@ a[data-toggle="collapse"] {
   margin-left: 10%;
 }
 #login{
-  background-image: url("images/Plano_de_fundo/space.jpg");
+  background-image: url("../../images/space.jpg") !important;
 }
 #Card-login{
-  background-image: url("images/Plano_de_fundo/space.jpg");
+  background-image: url("../../images/space.jpg") !important;
 }
 #title-mc{
   font-family: 'CentSchbkCyrill BT', sans-serif;
