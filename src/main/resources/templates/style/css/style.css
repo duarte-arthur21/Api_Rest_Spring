@@ -2242,8 +2242,8 @@ fieldset:disabled a.btn {
     border-color: #007bff; }
   .btn-primary:not(:disabled):not(.disabled):active, .btn-primary:not(:disabled):not(.disabled).active,
   .show > .btn-primary.dropdown-toggle {
-    color: #fff;
-    background-color: #0062cc;
+    color: rgb(8, 8, 8);
+    background-color: #0a0a0a;
     border-color: #005cbf; }
     .btn-primary:not(:disabled):not(.disabled):active:focus, .btn-primary:not(:disabled):not(.disabled).active:focus,
     .show > .btn-primary.dropdown-toggle:focus {
@@ -2295,7 +2295,7 @@ fieldset:disabled a.btn {
     border-color: #28a745; }
   .btn-success:not(:disabled):not(.disabled):active, .btn-success:not(:disabled):not(.disabled).active,
   .show > .btn-success.dropdown-toggle {
-    color: #fff;
+    color: rgb(14, 13, 13);
     background-color: #1e7e34;
     border-color: #1c7430; }
     .btn-success:not(:disabled):not(.disabled):active:focus, .btn-success:not(:disabled):not(.disabled).active:focus,
@@ -2320,7 +2320,7 @@ fieldset:disabled a.btn {
     border-color: #17a2b8; }
   .btn-info:not(:disabled):not(.disabled):active, .btn-info:not(:disabled):not(.disabled).active,
   .show > .btn-info.dropdown-toggle {
-    color: #fff;
+    color: rgb(10, 10, 10);
     background-color: #117a8b;
     border-color: #10707f; }
     .btn-info:not(:disabled):not(.disabled):active:focus, .btn-info:not(:disabled):not(.disabled).active:focus,
@@ -2746,7 +2746,8 @@ input[type="button"].btn-block {
   padding: 0.5rem 0;
   margin: 0.125rem 0 0;
   font-size: 1rem;
-  color: #212529;
+  color: #070707;
+  background-color: #000;
   text-align: left;
   list-style: none;
   background-color: #fff;
@@ -3585,6 +3586,7 @@ input[type="button"].btn-block {
   display: block;
   padding: 0.5rem 1rem;
   color: var(--white) !important;
+  font-family: 'roboto', sans-serif;
 }
 
 
@@ -8691,6 +8693,11 @@ a[data-toggle="collapse"] {
 #persona{
   border-radius: 50%;
   margin-right: 2% !important;
+}
+#dropdownMenu2{
+  font-family: 'roboto', sans-serif;
+  font-size: 18px;
+
 }
 .btn.btn-primary {
   background: #f8b739;

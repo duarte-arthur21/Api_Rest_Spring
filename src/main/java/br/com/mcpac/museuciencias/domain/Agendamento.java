@@ -32,7 +32,7 @@ public class Agendamento {
 	private LocalDate data;
 	
 	@Column(nullable = true)
-	@JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "hh-mm")
+	@JsonFormat(shape = JsonFormat.Shape.STRING,pattern = "hh:mm")
 	private LocalTime horario;
 	
 	
